@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 182" width="340" height="182" role="img" aria-label="New cases per month by type" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+<title>New cases per month by type</title>
+<rect width="340" height="182" fill="#fcfcfb"/>
+<rect x="0" y="8" width="10" height="10" rx="2" fill="#2a78d6"/>
+<text x="15" y="17" font-size="11" fill="#52514e">Game integrity</text>
+<rect x="165" y="8" width="10" height="10" rx="2" fill="#eb6834"/>
+<text x="180" y="17" font-size="11" fill="#52514e">Account security</text>
+<rect x="0" y="26" width="10" height="10" rx="2" fill="#1baf7a"/>
+<text x="15" y="35" font-size="11" fill="#52514e">Bonus &amp; multi-accounting</text>
+<rect x="165" y="26" width="10" height="10" rx="2" fill="#eda100"/>
+<text x="180" y="35" font-size="11" fill="#52514e">AML</text>
+<line x1="30" x2="330" y1="158.0" y2="158.0" stroke="#c3c2b7" stroke-width="1"/>
+<text x="22" y="161.5" font-size="10" fill="#898781" text-anchor="end">0</text>
+<line x1="30" x2="330" y1="131.5" y2="131.5" stroke="#e1e0d9" stroke-width="1"/>
+<text x="22" y="135.0" font-size="10" fill="#898781" text-anchor="end">2</text>
+<line x1="30" x2="330" y1="105.0" y2="105.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="22" y="108.5" font-size="10" fill="#898781" text-anchor="end">4</text>
+<line x1="30" x2="330" y1="78.5" y2="78.5" stroke="#e1e0d9" stroke-width="1"/>
+<text x="22" y="82.0" font-size="10" fill="#898781" text-anchor="end">6</text>
+<line x1="30" x2="330" y1="52.0" y2="52.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="22" y="55.5" font-size="10" fill="#898781" text-anchor="end">8</text>
+<path d="M68.0,144.8 H92.0 V158.0 H68.0 Z" fill="#2a78d6"><title>July · Game integrity: 1 case</title></path>
+<path d="M68.0,118.2 H92.0 V142.8 H68.0 Z" fill="#eb6834"><title>July · Account security: 2 cases</title></path>
+<path d="M68.0,105.0 H92.0 V116.2 H68.0 Z" fill="#1baf7a"><title>July · Bonus abuse &amp; multi-accounting: 1 case</title></path>
+<path d="M68.0,103.0 V95.8 Q68.0,91.8 72.0,91.8 H88.0 Q92.0,91.8 92.0,95.8 V103.0 Z" fill="#eda100"><title>July · AML: 1 case</title></path>
+<text x="80.0" y="85.8" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">5</text>
+<text x="80.0" y="176" font-size="11" fill="#52514e" text-anchor="middle">July</text>
+<path d="M168.0,131.5 H192.0 V158.0 H168.0 Z" fill="#2a78d6"><title>August · Game integrity: 2 cases</title></path>
+<path d="M168.0,118.2 H192.0 V129.5 H168.0 Z" fill="#eb6834"><title>August · Account security: 1 case</title></path>
+<path d="M168.0,116.2 V109.0 Q168.0,105.0 172.0,105.0 H188.0 Q192.0,105.0 192.0,109.0 V116.2 Z" fill="#eda100"><title>August · AML: 1 case</title></path>
+<text x="180.0" y="99.0" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">4</text>
+<text x="180.0" y="176" font-size="11" fill="#52514e" text-anchor="middle">August</text>
+<path d="M268.0,144.8 H292.0 V158.0 H268.0 Z" fill="#2a78d6"><title>September · Game integrity: 1 case</title></path>
+<path d="M268.0,105.0 H292.0 V142.8 H268.0 Z" fill="#eb6834"><title>September · Account security: 3 cases</title></path>
+<path d="M268.0,91.8 H292.0 V103.0 H268.0 Z" fill="#1baf7a"><title>September · Bonus abuse &amp; multi-accounting: 1 case</title></path>
+<path d="M268.0,89.8 V69.2 Q268.0,65.2 272.0,65.2 H288.0 Q292.0,65.2 292.0,69.2 V89.8 Z" fill="#eda100"><title>September · AML: 2 cases</title></path>
+<text x="280.0" y="59.2" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">7</text>
+<text x="280.0" y="176" font-size="11" fill="#52514e" text-anchor="middle">September</text>
+</svg>

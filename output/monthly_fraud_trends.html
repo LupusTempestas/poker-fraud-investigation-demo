@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monthly Fraud Trends</title>
+<style>
+  :root { --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781; --grid: #e1e0d9; --axis: #c3c2b7;
+          --tile: #f3f2ee; }
+  @page { size: A4; margin: 9mm 12mm; }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  html, body { background: #ffffff; }
+  body { margin: 0 auto; max-width: 186mm; padding: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 9pt; line-height: 1.36;
+          color: var(--ink); }
+  @media screen { body { padding: 16px; } }
+  h1 { font-size: 17pt; margin: 0 0 1mm; font-weight: 650; letter-spacing: -0.01em; }
+  .sub { color: var(--ink-2); margin: 0 0 4mm; font-size: 8.6pt; }
+  h2 { font-size: 10.5pt; margin: 3.5mm 0 1.2mm; font-weight: 650; }
+  h3 { font-size: 9pt; margin: 0 0 1mm; font-weight: 600; color: var(--ink-2); }
+  .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; }
+  .tile { background: var(--tile); border-radius: 6px; padding: 2.5mm 3mm; }
+  .tile .label { color: var(--ink-2); font-size: 8.4pt; }
+  .tile .value { font-size: 16pt; font-weight: 600; line-height: 1.2; margin-top: 0.5mm; }
+  .tile .delta { font-size: 8.2pt; font-weight: 600; }
+  .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; margin-top: 3.5mm; }
+  .charts svg { width: 100%; height: auto; display: block; }
+  ul { margin: 0; padding-left: 4.5mm; }
+  li { margin: 0 0 1mm; }
+  table { width: 100%; border-collapse: collapse; font-size: 8.6pt; }
+  th { text-align: left; color: var(--ink-2); font-weight: 600; border-bottom: 1px solid var(--axis); padding: 1mm 1.5mm; }
+  td { border-bottom: 1px solid var(--grid); padding: 1mm 1.5mm; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .health { color: var(--ink-2); font-size: 8.4pt; }
+  .foot { color: var(--muted); font-size: 7.8pt; margin-top: 3mm; border-top: 1px solid var(--grid); padding-top: 1.5mm; }
+  code { font-family: Consolas, monospace; font-size: 0.95em; }
+</style>
+</head>
+<body>
+<h1>Monthly fraud trends · September 2026</h1>
+<p class="sub">Demo crypto poker room · synthetic data · cases opened in September vs. July and August ·
+generated 23 Oct 2026</p>
+<div class="tiles"><div class="tile"><div class="label">New cases</div><div class="value">7</div><div class="delta" style="color:#d03b3b">▲ 3 vs August</div></div><div class="tile"><div class="label">Accounts involved</div><div class="value">22</div><div class="delta" style="color:#d03b3b">▲ 13 vs August</div></div><div class="tile"><div class="label">Money at risk</div><div class="value">22,139 USDT</div><div class="delta" style="color:#d03b3b">▲ 8,132 USDT vs August</div></div><div class="tile"><div class="label">P1 cases (review today)</div><div class="value">2</div><div class="delta" style="color:#d03b3b">▲ 1 vs August</div></div></div>
+<div class="charts">
+  <div><h3>New cases per month by type</h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 182" width="340" height="182" role="img" aria-label="New cases per month by type" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+<title>New cases per month by type</title>
+<rect width="340" height="182" fill="#fcfcfb"/>
+<rect x="0" y="8" width="10" height="10" rx="2" fill="#2a78d6"/>
+<text x="15" y="17" font-size="11" fill="#52514e">Game integrity</text>
+<rect x="165" y="8" width="10" height="10" rx="2" fill="#eb6834"/>
+<text x="180" y="17" font-size="11" fill="#52514e">Account security</text>
+<rect x="0" y="26" width="10" height="10" rx="2" fill="#1baf7a"/>
+<text x="15" y="35" font-size="11" fill="#52514e">Bonus &amp; multi-accounting</text>
+<rect x="165" y="26" width="10" height="10" rx="2" fill="#eda100"/>
+<text x="180" y="35" font-size="11" fill="#52514e">AML</text>
+<line x1="30" x2="330" y1="158.0" y2="158.0" stroke="#c3c2b7" stroke-width="1"/>
+<text x="22" y="161.5" font-size="10" fill="#898781" text-anchor="end">0</text>
+<line x1="30" x2="330" y1="131.5" y2="131.5" stroke="#e1e0d9" stroke-width="1"/>
+<text x="22" y="135.0" font-size="10" fill="#898781" text-anchor="end">2</text>
+<line x1="30" x2="330" y1="105.0" y2="105.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="22" y="108.5" font-size="10" fill="#898781" text-anchor="end">4</text>
+<line x1="30" x2="330" y1="78.5" y2="78.5" stroke="#e1e0d9" stroke-width="1"/>
+<text x="22" y="82.0" font-size="10" fill="#898781" text-anchor="end">6</text>
+<line x1="30" x2="330" y1="52.0" y2="52.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="22" y="55.5" font-size="10" fill="#898781" text-anchor="end">8</text>
+<path d="M68.0,144.8 H92.0 V158.0 H68.0 Z" fill="#2a78d6"><title>July · Game integrity: 1 case</title></path>
+<path d="M68.0,118.2 H92.0 V142.8 H68.0 Z" fill="#eb6834"><title>July · Account security: 2 cases</title></path>
+<path d="M68.0,105.0 H92.0 V116.2 H68.0 Z" fill="#1baf7a"><title>July · Bonus abuse &amp; multi-accounting: 1 case</title></path>
+<path d="M68.0,103.0 V95.8 Q68.0,91.8 72.0,91.8 H88.0 Q92.0,91.8 92.0,95.8 V103.0 Z" fill="#eda100"><title>July · AML: 1 case</title></path>
+<text x="80.0" y="85.8" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">5</text>
+<text x="80.0" y="176" font-size="11" fill="#52514e" text-anchor="middle">July</text>
+<path d="M168.0,131.5 H192.0 V158.0 H168.0 Z" fill="#2a78d6"><title>August · Game integrity: 2 cases</title></path>
+<path d="M168.0,118.2 H192.0 V129.5 H168.0 Z" fill="#eb6834"><title>August · Account security: 1 case</title></path>
+<path d="M168.0,116.2 V109.0 Q168.0,105.0 172.0,105.0 H188.0 Q192.0,105.0 192.0,109.0 V116.2 Z" fill="#eda100"><title>August · AML: 1 case</title></path>
+<text x="180.0" y="99.0" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">4</text>
+<text x="180.0" y="176" font-size="11" fill="#52514e" text-anchor="middle">August</text>
+<path d="M268.0,144.8 H292.0 V158.0 H268.0 Z" fill="#2a78d6"><title>September · Game integrity: 1 case</title></path>
+<path d="M268.0,105.0 H292.0 V142.8 H268.0 Z" fill="#eb6834"><title>September · Account security: 3 cases</title></path>
+<path d="M268.0,91.8 H292.0 V103.0 H268.0 Z" fill="#1baf7a"><title>September · Bonus abuse &amp; multi-accounting: 1 case</title></path>
+<path d="M268.0,89.8 V69.2 Q268.0,65.2 272.0,65.2 H288.0 Q292.0,65.2 292.0,69.2 V89.8 Z" fill="#eda100"><title>September · AML: 2 cases</title></path>
+<text x="280.0" y="59.2" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">7</text>
+<text x="280.0" y="176" font-size="11" fill="#52514e" text-anchor="middle">September</text>
+</svg></div>
+  <div><h3>Money at risk in September's new cases, by type (USDT)</h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 182" width="340" height="182" role="img" aria-label="Money at risk in September&#x27;s new cases, by type (USDT)" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+<title>Money at risk in September&#x27;s new cases, by type (USDT)</title>
+<rect width="340" height="182" fill="#fcfcfb"/>
+<text x="0" y="37" font-size="11" fill="#52514e">AML</text>
+<path d="M152.0,24.0 H258.0 Q262.0,24.0 262.0,28.0 V38.0 Q262.0,42.0 258.0,42.0 H152.0 Z" fill="#eda100"><title>AML: 13,535 USDT</title></path>
+<text x="268.0" y="37" font-size="11" font-weight="600" fill="#0b0b0b">13,535</text>
+<text x="0" y="74" font-size="11" fill="#52514e">Account security</text>
+<path d="M152.0,61.0 H206.1 Q210.1,61.0 210.1,65.0 V75.0 Q210.1,79.0 206.1,79.0 H152.0 Z" fill="#eb6834"><title>Account security: 7,150 USDT</title></path>
+<text x="216.1" y="74" font-size="11" font-weight="600" fill="#0b0b0b">7,150</text>
+<text x="0" y="111" font-size="11" fill="#52514e">Game integrity</text>
+<path d="M152.0,98.0 H155.3 Q159.3,98.0 159.3,102.0 V112.0 Q159.3,116.0 155.3,116.0 H152.0 Z" fill="#2a78d6"><title>Game integrity: 900 USDT</title></path>
+<text x="165.3" y="111" font-size="11" font-weight="600" fill="#0b0b0b">900</text>
+<text x="0" y="148" font-size="11" fill="#52514e">Bonus &amp; multi-accounting</text>
+<path d="M152.0,135.0 H152.5 Q156.5,135.0 156.5,139.0 V149.0 Q156.5,153.0 152.5,153.0 H152.0 Z" fill="#1baf7a"><title>Bonus abuse &amp; multi-accounting: 555 USDT</title></path>
+<text x="162.5" y="148" font-size="11" font-weight="600" fill="#0b0b0b">555</text>
+<line x1="152" x2="152" y1="18" y2="159" stroke="#c3c2b7" stroke-width="1"/>
+</svg></div>
+</div>
+<h2>What changed in September</h2>
+<ul><li><strong>Account takeover: 4 flags (vs 1 in August).</strong> 3 were one campaign: the same device, IP and payout wallet on consecutive nights, 6,510 USDT withdrawn, all from hosting (server/VPN) IPs. 1 other flag looks like a traveller&#x27;s new phone (the &#x27;new&#x27; device was later used from home): probably a false positive, to confirm with the player.</li><li><strong>Bonus abuse: a farm of 12 linked accounts (largest before: 5 in July).</strong> Opened within 6 days, all with disposable emails; each took the welcome bonus and they cashed out 555 USDT. Small money, but the pattern is scaling.</li><li><strong>AML: 2 new accounts moved 5,800 USDT through with almost no play.</strong> They shared a payout wallet, and all switched from BTC/ETH to USDT on the way. Separately, P01879 made 4 deposits just under the 2,000 USDT review threshold in a week (structuring). All of these go to the MLRO; the players are not told why.</li><li><strong>Game integrity:</strong> 1 new chip dumping case (900 USDT); still active from earlier months: the August chip dumping group (5 accounts, until 3 Sep), the July collusion group (3 accounts, until 28 Sep), the August collusion group (2 accounts, until 29 Sep).</li></ul>
+<h2>Rings and campaigns active in September</h2>
+<table><thead><tr><th>Case</th><th>Type</th><th class="num">Accounts</th><th>Active</th><th class="num">Money at risk</th><th>Priority</th></tr></thead>
+<tbody><tr><td>FR-2608-02</td><td>Chip dumping + Multi-accounting</td><td class='num'>5</td><td>08-10 → 09-03</td><td class='num'>7,090 USDT</td><td>P1</td></tr><tr><td>FR-2609-07</td><td>Account takeover</td><td class='num'>3</td><td>09-21 → 09-23</td><td class='num'>6,510 USDT</td><td>P1</td></tr><tr><td>FR-2607-02</td><td>Collusion / soft-play + Multi-accounting</td><td class='num'>3</td><td>07-05 → 09-28</td><td class='num'>1,200 USDT</td><td>P1</td></tr><tr><td>FR-2609-02</td><td>Bonus abuse + Multi-accounting</td><td class='num'>12</td><td>09-03 → 09-12</td><td class='num'>555 USDT</td><td>P2</td></tr></tbody></table>
+<h2>Recommended actions</h2>
+<ul><li><strong>Step-up check on new-wallet withdrawals.</strong> Ask for 2FA or email confirmation when a withdrawal goes to a never-used wallet within 24 h of a login from a new device and country. It would have challenged every takeover withdrawal this month; the cost is one extra step for travellers.</li><li><strong>Make the welcome bonus slower to cash out:</strong> hold it for 7 days or 100 hands, and refuse it to devices and wallets already linked to a claimed bonus.</li><li><strong>Send this month&#x27;s AML cases to the MLRO</strong> and screen the shared payout wallet with blockchain analytics; hold large deposits that are withdrawn almost unplayed for manual review.</li><li><strong>Alert in real time when linked accounts open a two-seat table together:</strong> 100% of the hands between flagged chip-dumping pairs this quarter were played at one.</li></ul>
+<h2>Rule health</h2>
+<p class="health">7 rules, 16 cases this quarter; 3 shared identifiers ignored as too common to identify anyone (carrier gateway, VPN exit, exchange wallet). Against the planted answer key: 14/14 fraud scenarios caught, 7/7 innocent look-alikes left alone. Known false-positive pattern: 2 takeover flags where the &#x27;new&#x27; device was later used from home (a traveller&#x27;s new phone) - which is why every flag goes to a human.</p>
+<p class="foot">Synthetic data only (2,000 fictional players, Jul-Sep 2026) · case details: <code>output/case_list.md</code>
+· rule logic: <code>rules/*.sql</code> · rebuild: <code>python run.py</code></p>
+</body>
+</html>

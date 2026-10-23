@@ -1,0 +1,5 @@
+__pycache__/
+# rebuilt by `python run.py` in a few seconds; 25+ MB
+output/poker_room.sqlite
+# personal application notes, kept off the public repo
+CV_ENTRY.md

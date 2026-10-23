@@ -1,0 +1,23 @@
+scenario_id,kind,title,expected,player_ids,value,notes
+R1,fraud,Chip-dumping ring (5 accounts),chip_dumping;multi_accounting,P01770;P01789;P01798;P01809;P01815,,"4 new accounts funded from one wallet, sharing 2 devices, lose on purpose to 1 receiver in late-night heads-up games; the receiver cashes out to a fresh wallet"
+R2,fraud,Chip-dumping pair,chip_dumping,P01599;P01933,,a 2-day-old account dumps its deposit to an older account on the same home IP (different devices)
+R3,fraud,Collusion team (3 accounts),collusion;multi_accounting,P01534;P01554;P01603,,three accounts on one home IP (two also share a laptop) sit together and avoid playing each other
+R4,fraud,Collusion pair,collusion;multi_accounting,P01777;P01784,,two accounts funded from the same wallet sit together and soft-play each other
+R5,fraud,Bonus-abuse farm (12 accounts),bonus_abuse;multi_accounting,P01899;P01900;P01902;P01903;P01910;P01911;P01914;P01915;P01922;P01923;P01927;P01928,,"12 accounts opened in 6 days with disposable emails on 2 devices behind one VPN exit; each takes the welcome bonus, plays a few hands and cashes out to 2 shared wallets"
+R6,fraud,Bonus-abuse farm (5 accounts),bonus_abuse;multi_accounting,P01729;P01735;P01738;P01739;P01746,,"5 accounts opened on consecutive days on one laptop, cashing out to one wallet"
+ATO1,fraud,Account takeover,account_takeover,P00164,,"established account: login from a new device in a new country, then a withdrawal to a new wallet within 40 min"
+ATO2,fraud,Account-takeover campaign (3 victims),account_takeover,P00286;P00941;P01100,,"one attacker device, IP and payout wallet used against three unrelated accounts on three nights"
+S1,fraud,Account sharing,account_sharing,P01621,,"account used alternately from Canada and Argentina on two devices, hours apart, for 10 days"
+S2,fraud,Account sharing,account_sharing,P01411,,"account used alternately from the UK and Thailand on two devices, hours apart, for 9 days"
+A1,fraud,Deposit-and-withdraw (pass-through),aml_pass_through,P01801,,"2-day-old account deposits 4,800 in BTC, plays 8 micro hands, withdraws ~99% in USDT 20 h later"
+A2,fraud,Pass-through pair sharing a payout wallet,aml_pass_through;multi_accounting,P01943;P01984,,"two new accounts deposit in ETH/BTC, barely play, and withdraw USDT to the same wallet"
+ST1,fraud,"Structuring under the 2,000 threshold",aml_structuring,P01648,,"five deposits of 1,900-1,990 in six days from two wallets"
+ST2,fraud,"Structuring under the 2,000 threshold",aml_structuring,P01879,,"four deposits of 1,850-1,995 in a week"
+B1,benign,Household sharing wifi,watchlist_only,P01293;P01470,,"two people in one home: same IP, own devices and wallets, never at the same table"
+B4,benign,Traveller withdrawing to own wallet,no:account_takeover,P00278,,on holiday in Spain with a new tablet; withdraws to the wallet they always use
+B8,benign,Traveller with new phone and new wallet,expected_fp:account_takeover,P00870,,buys a phone in Mexico and withdraws to a new wallet - looks exactly like a takeover until a human checks
+B5,benign,Two regulars who share tables,no:collusion,P00412;P01103,,high-volume players at the same stake who often sit together but contest pots normally
+B6,benign,"High roller: big deposit, big play, fast cash-out",no:aml_pass_through,P00694,,"deposits 6,000 and withdraws 5,500 two days later - but plays ~360 hands in between"
+B7,benign,Weak player repeatedly losing to a strong one,no:chip_dumping,P01151;P01213,,"heads-up games where the weaker player loses most pots - but at showdown, not by folding big bets"
+B2,benign,Mobile-carrier gateway IP,excluded_ip,P00148;P00175;P00294;P00357;P00384;P00419;P00471;P00472;P00872;P00916;P00927;P00978;P00994;P01079;P01180;P01240;P01249;P01255;P01265;P01299;P01460;P01508;P01584;P01631;P01638;P01760;P01792;P01793;P01804,10.250.0.1,29 unrelated players whose phones share one carrier-grade NAT address
+B3,benign,Exchange hot wallet used by many players,excluded_wallet,P00177;P00186;P00211;P00362;P00376;P00402;P00886;P01023;P01048;P01060;P01107;P01156;P01384;P01500;P01582;P01692;P01707;P01719;P01757;P01843,0x3a37dfe702393e0fa6c8bbc2a299e490bbed2cf3,20 unrelated players withdraw to the same labelled exchange address
